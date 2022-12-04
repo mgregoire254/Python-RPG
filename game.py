@@ -1,8 +1,12 @@
-known = False
+
 
 def player_info():
+        global playerHP
+        global known
+        global playerName
         playerHP = 15
         playerWeapon = "Knife"
+        known = False
 
         print("Your HP: " + str(playerHP) + "\n")
         print("Your Weapon: " + playerWeapon + "\n")
