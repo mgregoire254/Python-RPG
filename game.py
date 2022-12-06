@@ -1,19 +1,20 @@
 
 
 def player_info():
-        global playerHP
+        global player_hp
         global known
-        global playerName
-        playerHP = 15
-        playerWeapon = "Knife"
+        global player_name
+        playerH = 15
+        player_weapon = "Knife"
+        player_armor
         known = False
 
-        print("Your HP: " + str(playerHP) + "\n")
-        print("Your Weapon: " + playerWeapon + "\n")
+        print("Your HP: " + str(player_hp) + "\n")
+        print("Your Weapon: " + player_weapon + "\n")
 
         print("Please enter your name: ")
-        playerName = input()
-        print("\nHello " + playerName + ", let's start your adventure!\n")
+        player_name = input()
+        print("\nHello " + player_name + ", let's start your adventure!\n")
 
 def intro_scene():
     print("Welcome to the land of Alduul\n")
@@ -35,7 +36,7 @@ def calhollow_town_gate():
     if choice == "1":
         if known:
             print(
-                    f"Guard: Hello {player_info().playerName}.\n Welcome to calhollow, please enter the gate.")
+                    f"Guard: Hello {player_info().playerame}.\n Welcome to calhollow, please enter the gate.")
         else:
             print("Guard: Hello there stranger. \n Sorry but we cannot let a stranger enter our town.")
 
@@ -43,7 +44,7 @@ def calhollow_town_gate():
         print("Guard: Hey dont't be stupd. \n\nThe guard hit you so hard and you gave up.)")
         
 
-def towncrossRoad():            
+def town_crossroad():            
 		print("----------------------------------------------------------------------\n")
 		print("You are at a crossroad. If you go south, you will go back to the town.\n\n")
 		print("1: Go north")
@@ -52,6 +53,11 @@ def towncrossRoad():
 		print("4: Go west")
 		print("----------------------------------------------------------------------\n")
 
+def river():
+    pass        
+
+def forest():
+    pass
 
 
 intro_scene()
