@@ -4,9 +4,9 @@ def player_info():
         global player_hp
         global known
         global player_name
-        playerH = 15
+        player_hp = 15
         player_weapon = "Knife"
-        player_armor
+        player_armor = ""
         known = False
 
         print("Your HP: " + str(player_hp) + "\n")
