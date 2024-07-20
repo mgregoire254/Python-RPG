@@ -17,7 +17,7 @@ def player_info():
         print("\nHello " + player_name + ", let's start your adventure!\n")
 
 def intro_scene():
-    print("Welcome to the land of Alduul\n")
+    print("\nWelcome to the land of Alduul\n")
     player_info()
     calhollow_town_gate()
 
@@ -42,17 +42,25 @@ def calhollow_town_gate():
 
     elif choice == "2":
         print("Guard: Hey dont't be stupd. \n\nThe guard hit you so hard and you gave up.)")
+    elif choice == "3":
+        leaving_town = input("do you wish to leave the town?\n")
+        if leaving_town == "1":
+            town_crossroad()
+        elif leaving_town == "2":
+            calhollow_town_gate()
+        else:
+            print("That's not a valid choice.")
         
 
 def town_crossroad():            
-		print("----------------------------------------------------------------------\n")
-		print("You are at a crossroad. If you go south, you will go back to the town.\n\n")
-		print("1: Go north")
-		print("2: Go east")
-		print("3: Go south")
-		print("4: Go west")
-		print("----------------------------------------------------------------------\n")
-
+        print("----------------------------------------------------------------------\n")
+        print("You are at a crossroad. If you go south, you will go back to the town.\n\n")
+        print("1: Go north")
+        print("2: Go east")
+        print("3: Go south")
+        print("4: Go west")
+        print('----------------------------------------------------------------------\n')
+        choice = input('Please enter a choice: ')
 def river():
     pass        
 
